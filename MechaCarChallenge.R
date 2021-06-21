@@ -17,3 +17,9 @@ total_summary <- sus_table %>% summarize(Mean=mean(PSI), Median=median(PSI), Var
 
 # Creating table of summary statistics by lot number
 lot_summary <- sus_table %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI))
+
+# Performing t-tests on whether mean is different from pop mean of 1500 PSI
+t.test(sus_table$PSI, mu=1500)
+t.test(subset(sus_table$PSI, sus_table$Manufacturing_Lot == 'Lot1'), mu=1500)
+t.test(subset(sus_table$PSI, sus_table$Manufacturing_Lot == 'Lot2'), mu=1500)
+t.test(subset(sus_table$PSI, sus_table$Manufacturing_Lot == 'Lot3'), mu=1500)

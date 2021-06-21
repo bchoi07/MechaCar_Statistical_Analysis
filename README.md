@@ -6,3 +6,19 @@ The variables that provided a non-random amount of variance to MPG values includ
 
 Because the intercept has a significant amount of variability, we may need to fine tune our model either by scaling existing variables or adding new variables. As it is right now, the model does not seem to predict MPG very well.
 
+## Summary Statistics on Suspension Coils
+
+Unfortunately, not all manufacturing lots meet the design specifications. Though the total variance and Lot 1/2 variances are under 100 PSI, Lot 3 coils exceed this number with 170.3 PSI in variance. 
+
+## T-Tests on Suspension Coils
+
+Based on our t-tests, we find that we fail to reject the null hypothesis that the PSI is the same as the population mean of 1500 PSI for the overall sample and Lots 1 and 2 as seen by the images below:
+
+![Overall T-test](Images/Ttest.png)
+![Lot 1 T-test](Images/Lot1_Ttest.png)
+![Lot 2 T-test](Images/Lot2_Ttest.png)
+
+However, when looking at the t-test for Lot 3 data, the p-value is 0.04168, which is lower than the 0.05 value we look for. Therefore, we reject the null hypothesis that the average PSI is the same as the population mean of 1500 PSI.
+
+![Lot 3 T-test](Images/Lot3_Ttest.png)
+
