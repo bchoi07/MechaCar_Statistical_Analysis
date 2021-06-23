@@ -22,3 +22,8 @@ However, when looking at the t-test for Lot 3 data, the p-value is 0.04168, whic
 
 ![Lot 3 T-test](Images/Lot3_Ttest.png)
 
+## Study Design: MechaCar vs Competition
+
+One study that can be done to quantify the MechaCar's performance against the competition is to measure some metrics such as fuel efficiency, maintenance cost, or safety rating. For instance, one metric can be MPG (miles per gallon), and we can test this by creating a statistical study that compares the MechaCar's MPG to the average MPG of any other car in the market.
+
+In this case, the null hypothesis would be that the MechaCar's MPG is less than or equal to the average car's MPG, while the alternate hypothesis is that the MechaCar's MPG is greater than the average car's MPG. To test this, we would need to get the average and variance of the average car MPG and run a Z-test on the MechaCar's MPG to see what the resulting p-value would be. From there, we can determine whether or not the null hypothesis can be rejected.
